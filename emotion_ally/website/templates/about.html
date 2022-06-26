@@ -1,0 +1,27 @@
+<!-- extend base template -->
+{% extends "base.html" %}
+
+<!-- override base title block -->
+{% block title %}About{% endblock %}
+
+{% block content %}
+<!-- notes -->
+<h1 align="center" style="margin-top: 100px;">About Emotion Ally</h1>
+<table style="margin-bottom: 20px; padding: 10px;">
+  <tr>
+    <td>   
+      <p><b>The Problem:</b> LGBT+ youth are facing a mental health epidemic. Data from the Trevor Project show an upward trend in negative mental health symptoms.</p> 
+      <p><b>Our Solution:</b> Using natural language processing technology, Emotion Ally can assist LGBT+ youth in learning emotion identification and management and connect them to the appropriate resources, without any judgement.</p>
+      <p>By understanding their emotions better, LGBT+ youth can better manage their symptoms, get support, and thrive like their peers.</p>
+    </td>
+    <td>
+      <img src="static/infographic.png" alt="infographic-about-app">
+    </td>
+  </tr>
+</table>
+<div align="center">
+  <a href="/identify"><button type="submit" class="btn btn-primary">Try It</button></a>
+</div>
+{% endblock %}
+
+

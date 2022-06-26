@@ -1,0 +1,20 @@
+<!-- extend base template -->
+{% extends "base.html" %}
+
+<!-- override base title block -->
+{% block title %}Re-identify{% endblock %}
+
+{% block content %}
+<!-- notes -->
+<h1 align="center" style="margin-top: 100px;">Let's Try Again</h1>
+<div align="center">
+  <p>Emotion Ally uses NLP so we can learn and improve our model and do better next time.<br>Please type 2 or 3 sentences in the box below so we can help identity the feeling you may be experiencing.<br>If you already know or have an idea of what emotion you might be feeling, please include it in your response.</p>
+</div>
+<form action="/result">
+  <textarea name="description" id="description" class="form-control" style="height: 400px; width: 1100px"></textarea>
+  <br>
+  <div align="center">
+    <a href="/result"><button type="submit" class="btn btn-primary">Submit</button></a>
+  </div>
+</form>
+{% endblock %}

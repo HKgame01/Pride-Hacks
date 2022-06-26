@@ -1,0 +1,26 @@
+<!-- extend base template -->
+{% extends "base.html" %}
+
+<!-- override base title block -->
+{% block title %}Result{% endblock %}
+
+{% block content %}
+<!-- notes -->
+<h1 align="center" style="margin-top: 100px;">You might be feeling...</h1>
+<div align="center" style="height: 400px; width: 1100px">
+  <!-- img -->
+  <img src="static/sadness-photo.png" alt="stock-sadness-image">
+  <!-- emotion -->
+  <h4 style="margin-bottom: 10px">Sadness</h4>
+  <!-- quote -->
+</div>
+<h6 align="center">Is this accurate?</h6>
+<!-- yes/no feedback -->
+<div style="display: flex; justify-content: space-between; width: 17%; margin-left: 457px">
+  <a href="/resources"><button type="submit" class="btn btn-primary">Yes</button></a>
+  <a href="/guess-again"><button type="submit" class="btn btn-primary">No</button></a>
+</div>
+<div style="margin-top: 50px;">
+  <p style="text-align: center;"><i>“We deserve to experience love fully, equally, without shame, and without compromise.” — Elliot Page</i></p>
+</div>
+{% endblock %}
